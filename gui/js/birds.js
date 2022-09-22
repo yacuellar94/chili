@@ -826,7 +826,7 @@ window.addEventListener('load', function () {
     /**                     Region map initialization 
     /** =================================================================================================== */
     /** Load the species list et create a combo */
-    loadJsonFile('specie.json', '/database', function (filename, data) {
+    loadJsonFile('specie.json', 'database', function (filename, data) {
         SPECIES = data;
         // YEAR_SELECTED = "Aout20";
         loadRegionList('All', (regionFile) => {
