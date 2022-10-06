@@ -4,7 +4,8 @@
 
 
 /** URLL server address*/
-var API_ENDPOINT = "http://localhost:80";
+//var API_ENDPOINT = "http://localhost:80";
+var API_ENDPOINT = "https://yacuellar94.github.io/chili/";
 
 // --- Wait untill all loaded or DOMContentLoaded or $(window).load(function() ---
 window.addEventListener('load', function () {
