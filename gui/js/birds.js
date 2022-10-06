@@ -629,7 +629,8 @@ window.addEventListener('load', function () {
     function loadJsonFile(filename, folder, callback) {
         var url = API_ENDPOINT + folder + '/' + filename;
         $.getJSON(url).then(function (geojson) {
-            CURRENT_DATA = JSON.parse(geojson);
+          CURRENT_DATA = geojson  
+          //CURRENT_DATA = JSON.parse(geojson);
             if (callback) {
                 callback(filename, CURRENT_DATA);
             }
