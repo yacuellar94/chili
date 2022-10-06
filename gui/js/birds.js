@@ -628,8 +628,7 @@ window.addEventListener('load', function () {
    
     function loadJsonFile(filename, folder, callback) {
         var url = API_ENDPOINT + folder + '/' + filename;
-         console.log(url)
-        $.getJSON("https://cors.io/?" + url).then(function (geojson) {
+        $.getJSON(url).then(function (geojson) {
             CURRENT_DATA = JSON.parse(geojson);
             if (callback) {
                 callback(filename, CURRENT_DATA);
