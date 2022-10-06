@@ -7,7 +7,7 @@ import _thread
 import webbrowser
 import time
 
-HOST_NAME = 'localhost'
+HOST_NAME = 'chili'
 PORT = 80
 
 def start_server():
